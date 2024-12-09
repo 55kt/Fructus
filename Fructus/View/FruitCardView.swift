@@ -22,8 +22,17 @@ struct FruitCardView: View {
                 
                 // Fruit Title
                 Text("Blueberry")
+                    .foregroundStyle(.white)
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
                 
                 // Fruit Headline
+                Text("Blueberries are a type of berry, a fruit produced by many plant species in the genus Ribes, specifically the genus Ribes.")
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 16)
+                    .frame(maxWidth: 480)
                 
                 // Button Start
             }// VStack
